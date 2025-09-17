@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Faculdade Exemplo</title>
+    <title>Faculdade Exemplo - Ensino Superior de Qualidade</title>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Universidade de cidade fictícia. Excelência em Ensino Superior, preparando alunos para o mercado de trabalho.">
     <!-- Adicionado meta description -->
     <style>
@@ -28,13 +29,17 @@
             text-decoration: none;
         }
         .banner {
-            background: gray;
-            height: 200px;
+            height: 300px;
             text-align: center;
             color: white;
             display: flex;
             justify-content: center;
             align-items: center;
+            background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ffaminasbh.s3.amazonaws.com%2Fupload%2Fgaleria%2Ffotos%2F20220902111644_82.jpg&f=1&nofb=1&ipt=47d618b2795a05d196ddc2472615d986b7638ac1b502cda35d723b40666e5f3b");
+            background-size: cover;
+            background-position: center center;
+            background-color: rgba(0,0,0,0.5);
+            background-blend-mode: darken;
         }
         section {
             margin: 20px 0;
@@ -47,6 +52,7 @@
             color: white;
             text-align: center;
         }
+
     </style>
 </head>
 <body>
@@ -58,9 +64,9 @@
 
 <nav>
     <a href="index.html">Página Inicial Faculdade Exemplo</a>
-    <a href="cursos.html">Cursos de Graduação</a>
-    <a href="sobre.html">Sobre a Faculdade Exemplo</a>
-    <a href="contato.html">Entre em Contato</a>
+    <a href="#cursos">Cursos de Graduação</a>
+    <a href="#sobre">Sobre a Faculdade Exemplo</a>
+    <a href="#contato">Entre em Contato</a>
     <!-- Textos âncora otimizados -->
 </nav>
 
@@ -69,14 +75,14 @@
 </div>
 
 <main>
-    <section>
+    <section id="sobre">
         <h2>Quem Somos</h2>
         <p>A Faculdade Exemplo é uma instituição de ensino superior dedicada à formação de profissionais preparados para os desafios do mercado.</p>
         <p>Nossa missão, como faculdade, é oferecer educação de qualidade, com cursos de graduação e pós-graduação que transformam a vida de nossos alunos.</p>
         <!-- Inseridas palavras-chave estratégicas relacionadas a "faculdade" e "ensino superior" -->
     </section>
 
-    <section>
+    <section id="cursos">
         <h2>Nossos Cursos</h2>
         <ul>
             <li><a href="cursos/administracao.html">Curso de Administração</a></li>
@@ -90,8 +96,8 @@
 
     <section>
         <h2>Infraestrutura</h2>
-        <img src="campus.jpg" alt="Imagem do Campus da Faculdade Exemplo">
-        <p>Nosso campus conta com biblioteca, laboratórios modernos e áreas de convivência.</p>
+        <img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.eduvaleavare.com.br%2Fwp-content%2Fuploads%2F2018%2F03%2Fcampus2.jpg&f=1&nofb=1&ipt=d295881e961cc145332e1c43cd85ddd6e62e75c73ab03dd2f29fd0caa2c17970" width="40%" alt="Imagem do Campus da Faculdade Exemplo">
+        <p>Nosso campus conta com biblioteca, laboratórios modernos, salas de informática e áreas de convivência.</p>
         <p>Estamos sempre investindo em tecnologia e inovação.</p>
         <!-- Inserido atributo alt -->
     </section>
@@ -133,7 +139,7 @@
         <!-- Depoimentos agora possuem dados estruturados (review schema) para melhorar destaque no Google -->
     </section>
 
-    <section>
+    <section id="contato">
         <h2>Fale Conosco</h2>
         <form action="obrigado.html" method="post">
             <label>Nome:</label><br>
